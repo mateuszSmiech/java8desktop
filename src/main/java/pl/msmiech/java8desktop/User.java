@@ -4,7 +4,7 @@ class User {
 
     Point location;
 
-    public User(Point location) {
+    User(Point location) {
         this.location = location;
     }
 }

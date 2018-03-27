@@ -2,12 +2,12 @@ package pl.msmiech.java8desktop;
 
 class Point {
 
-    final double EARTH_RADIUS = 6371.0;
+    private final double EARTH_RADIUS = 6371.0;
 
-    double longitude;
-    double latitude;
+    private double longitude;
+    private double latitude;
 
-    public Point(double longitude, double latitude) {
+    Point(double longitude, double latitude) {
         this.longitude = longitude;
         this.latitude = latitude;
     }

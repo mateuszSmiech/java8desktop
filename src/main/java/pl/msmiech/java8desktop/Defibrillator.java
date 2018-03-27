@@ -2,10 +2,10 @@ package pl.msmiech.java8desktop;
 
 class Defibrillator {
 
-    int number;
+    private int number;
     String name;
-    String address;
-    String phoneNumber;
+    private String address;
+    private String phoneNumber;
     Point location;
 
     static Defibrillator createDefibrillator(String description) {
