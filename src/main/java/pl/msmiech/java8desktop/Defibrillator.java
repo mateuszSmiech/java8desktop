@@ -3,10 +3,10 @@ package pl.msmiech.java8desktop;
 class Defibrillator {
 
     private int number;
-    String name;
+    private String name;
     private String address;
     private String phoneNumber;
-    Point location;
+    private Point location;
 
     static Defibrillator createDefibrillator(String description) {
 
@@ -18,5 +18,13 @@ class Defibrillator {
         defibrillator.phoneNumber = tokens[3];
         defibrillator.location = new Point(StringUtils.toDouble(tokens[4]), StringUtils.toDouble(tokens[5]));
         return defibrillator;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Point getLocation() {
+        return location;
     }
 }

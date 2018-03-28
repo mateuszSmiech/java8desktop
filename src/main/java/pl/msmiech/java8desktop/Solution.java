@@ -31,15 +31,15 @@ class Solution {
         Defibrillator nearest = findNearest(user, defibrillators);
 
 
-        System.out.println(nearest.name);
+        System.out.println(nearest.getName());
     }
 
     private static Defibrillator findNearest(User user, List<Defibrillator> defibrillators) {
-        double minDistance = user.location.distanceTo(defibrillators.get(0).location);
+        double minDistance = user.getLocation().distanceTo(defibrillators.get(0).getLocation());
         Defibrillator minDefibrillator = defibrillators.get(0);
 
         for(Defibrillator defibs :defibrillators) {
-            double distance = user.location.distanceTo(defibs.location);
+            double distance = user.getLocation().distanceTo(defibs.getLocation());
             if(distance < minDistance) {
                 minDistance = distance;
                 minDefibrillator = defibs;

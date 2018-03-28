@@ -2,9 +2,13 @@ package pl.msmiech.java8desktop;
 
 class User {
 
-    Point location;
+    private Point location;
 
     User(Point location) {
         this.location = location;
+    }
+
+    public Point getLocation() {
+        return location;
     }
 }
