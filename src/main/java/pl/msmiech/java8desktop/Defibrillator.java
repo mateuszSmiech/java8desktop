@@ -1,5 +1,8 @@
 package pl.msmiech.java8desktop;
 
+import lombok.Data;
+
+@Data
 class Defibrillator {
 
     private int number;
@@ -20,23 +23,5 @@ class Defibrillator {
         return defibrillator;
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public Point getLocation() {
-        return location;
-    }
-
-    public int getNumber() {
-        return number;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
 }
