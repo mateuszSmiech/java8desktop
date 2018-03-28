@@ -28,35 +28,6 @@ class Defibrillator {
         return location;
     }
 
-    @Override
-    public String toString() {
-        return "Defibrillator: number=" + number +
-                ", name=" + name +
-                ", address=" + address +
-                ", phoneNumber=" + phoneNumber +
-                ", location=" + location.toString();
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public void setLocation(Point location) {
-        this.location = location;
-    }
-
     public int getNumber() {
         return number;
     }
